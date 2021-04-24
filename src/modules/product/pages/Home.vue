@@ -48,8 +48,8 @@
           </div>
         </div>
       </div>
-      <SwiperSlider>
-        <template v-slot:title> mobile </template>
+      <SwiperSlider v-if="products.length">
+        <template #title> Mobile</template>
         <router-link
           :to="{ name: 'Product', params: { id: 1 } }"
           class="swiper-slide"

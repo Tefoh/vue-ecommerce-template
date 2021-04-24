@@ -135,7 +135,7 @@
             </div>
           </div>
         </div>
-        <SwiperSlider>
+        <SwiperSlider v-if="products.length">
           <template v-slot:title> Related products </template>
           <router-link
             :to="{ name: 'Product', params: { id: 1 } }"
